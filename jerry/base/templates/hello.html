@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<title>login</title>
+<body>
+    <p>Hello , you can login here with your employee details
+
+    </p>
+    <!-- <form action="/other/" method="post">
+        <label for="your_name">Username</label>
+        <input id="your_name" type="text" name="your_name" maxlength="100" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" maxlength="100" required>
+        <input type="submit" value="LOGIN">
+    </form> -->
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="your_name">Your name: </label>
+<input id="your_name" type="text" name="your_name" maxlength="100" required value="{{your_name}}">
+<label for="your_name">Password: </label>
+<input id="passwor_d" type="password" name="passwor_d" maxlength="100" required>
+        {{ form }}
+        <input type="submit" value="Submit">
+        </form>
+</body>
+</html>
